@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "devfront"
+  "defaultProject": "devfront",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let d of data; let i = index" class="col-md-4 mt-2 mb-2">
+      <div class="card">
+        <!-- Option #1 -->
+        <!-- <agm-map [latitude]="{{ d.latitude }}" [longitude]="{{ d.longitude }}">
+          <agm-marker [latitude]="{{ d.latitude }}" [longitude]="{{ d.longitude }}"></agm-marker>
+        </agm-map> -->
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+        <div class="card-body">
+          <h5 class="card-title">{{ d.permit_type }}</h5>
+          <p class="card-text">{{ d.work_description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
